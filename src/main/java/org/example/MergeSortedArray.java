@@ -1,5 +1,9 @@
 package org.example;
-
+/*
+ * 作者: growAriel
+ * 日期: 2024-06-09
+ * 描述: 合并两个有序数组的实现
+ */
 public class MergeSortedArray {
     public static void main(String[] args) {
         int[] nums1 = {1,0};
