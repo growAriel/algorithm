@@ -1,7 +1,7 @@
 package org.example;
 /*
  * 作者: growAriel
- * 日期: 2024-06-09
+ * 日期: 2025-05-31
  * 描述: 合并两个有序数组的实现
  */
 public class MergeSortedArray {
