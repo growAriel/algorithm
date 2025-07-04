@@ -1,0 +1,51 @@
+Please use Java to solve below Question. 
+1. Move all algorithm logic into one function 
+2. Use given Input and output to build test case to test the code and add the test cases into main method.
+3. Extend more test cases to test the function
+4. run the code to ensure it's working as expected.
+5. If any issue occurs, please fix the issue until all issues are fixed.
+Question:
+
+The current selected programming language is Python3. We emphasize the submission of a fully working code over partially correct but efficient code. Use of certain header files are restricted. Once submitted, you cannot review this problem again. You can use print to debug your code. The print may not work in case of syntax/runtime error. The version of Python being used is 3.4.3
+
+Emma wishes to give her father a bouquet for his birthday. She asks for help from her mother Rosy. Rosy gives N flower sticks numbered 1 to N to Emma and tells her to arrange them in the bouquet in a particular order. She asks Emma to arrange the first K flower sticks in the order of increasing length and the remaining sticks in the order of decreasing length.
+
+Write an algorithm to find the final arrangement of the flower sticks in the bouquet.
+
+Input
+
+The first line of the input consists of an integer - flowerStick_size, representing the number of flower sticks (N)
+
+The second line consists of N space-separated integers - flowerStick[1], flowerStick[2],......flowerStick[N], representing the length of the flower sticks.
+
+The last line consists of an integer - random, representing the number K given by Rosy to Emma.
+
+Output
+
+Print N space-separated integers representing the final arrangement of the flower sticks in the bouquet.
+
+Constraints
+
+0 ≤ random < flowerStick_size
+
+0 < flowerStick_size < 10^6
+
+Example
+
+Input:
+
+8
+
+11 7 5 10 46 23 16 8
+
+3
+
+Output:
+
+5 7 11 46 23 16 10 8
+
+Explanation:
+
+Emma has to arrange the first three flower sticks in an increasing order of the length and remaining sticks in the decreasing order of the length.
+
+The final order of flower sticks in the bouquet is [5, 7, 11, 46, 23, 16, 10, 8].

@@ -1,0 +1,38 @@
+Please use Java to solve below Question. 
+1. Move all algorithm logic into one function 
+2. Use given Input and output to build test case to test the code and add the test cases into main method.
+3. Extend more test cases to test the function
+4. run the code to ensure it's working as expected.
+5. If any issue occurs, please fix the issue until all issues are fixed.
+
+# Question  
+
+The manager of a supermarket wishes to hold an event at which he will distribute gift baskets to lucky customers. Each gift basket contains a pair of products. Each basket contains different product pairs, but the overall value of the baskets may be the same. There are N types of products and each product has a price. The gift baskets will be awarded to the customers that pick a product pair that has a difference in price equal to the given integer value K.
+
+Write an algorithm to help the Manager find the total number of lucky customers who will win a gift basket.
+
+## Input  
+The first line of the input consists of an integer - *list_input_size*, representing the types of products (N).  
+The second line consists of N space-separated integers - *list_input[0], list_input[1], …….. list_input[N-1]*, representing the price of the products.  
+The last line consists of an integer - *K_input*, representing the given value K.
+
+## Output  
+Print an integer representing the total number of lucky customers who will win a gift basket.
+
+---
+
+### Additional Notes:
+1. The problem requires finding all unique pairs of products whose price difference equals K.
+2. Each pair (a,b) where |a - b| = K counts as one lucky customer.
+3. The order matters - (a,b) and (b,a) should be considered the same pair if a ≠ b.
+4. The table with numbers 16-39 appears to be unrelated to the problem and might be part of the document formatting.
+
+### Example Interpretation:
+If input is:
+4
+1 3 5 7
+2
+
+The valid pairs would be (1,3), (3,5), and (5,7), so output should be 3.
+
+The solution should efficiently handle finding all such pairs in the product list.
