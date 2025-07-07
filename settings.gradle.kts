@@ -1,2 +1,1 @@
-rootProject.name = "InfraDesign"
-
+rootProject.name = "Algorithm"
