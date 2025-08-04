@@ -1,9 +1,8 @@
 package org.example.bst.binaryTree;
-import org.example.bst.binaryTree.Node;
 import java.util.ArrayList;
 import java.util.List;
 
-public class populatingNextRightPointersInEachNodeII {
+public class populatingNextRightPointersInEachNodeIIDFS {
     public static void main(String[] args) {
         // Example usage
         Node root = new Node(1);
@@ -24,26 +23,22 @@ public class populatingNextRightPointersInEachNodeII {
         System.out.println("Node 7 next: " + (root.right.right.next == null ? "null" : root.right.right.next.val));
     }
 
+    private static List<Node> list = new ArrayList<>();
     public static Node connect(Node root) {
-        Node dummy = new Node();
-        Node current = root;
-
-        while (current != null) {
-            dummy.next = null; // Reset dummy's next pointer for the new level
-            Node nextLevel = dummy; // Pointer to build the next level
-            while (current != null) {
-                if (current.left != null) {
-                    nextLevel.next = current.left; // Connect left child
-                    nextLevel = nextLevel.next; // Move to the next position in the next level
-                }
-                if (current.right != null) {
-                    nextLevel.next = current.right; // Connect right child
-                    nextLevel = nextLevel.next; // Move to the next position in the next level
-                }
-                current = current.next; // Move to the next node in the current level){
-            }
-            current = dummy.next; // Move to the first node of the next level
+        dfs(root, 0);
+        return root;
+    }
+    public static void dfs(Node node, int level) {
+        if (node == null) {
+            return;
         }
-        return root; // Return the modified tree with next pointers set
+        if (list.size() == level) {
+            list.add(node);
+        } else {
+            list.get(level).next = node;
+            list.set(level, node);
+        }
+        dfs(node.left, level + 1);
+        dfs(node.right, level + 1);
     }
 }
