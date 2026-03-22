@@ -1,6 +1,6 @@
-package org.example;
+package org.example.secretCode;
 
-public class SecretCode {
+public class secretCode {
 
     // 快速幂
     public static long fastPow(long base, long exponent, long mod) {
