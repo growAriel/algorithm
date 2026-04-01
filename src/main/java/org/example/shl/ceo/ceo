@@ -1,0 +1,63 @@
+A convention center is hosting a meeting of large firms, which  N  number of CEOs will be attending. Each CEO is assigned an invitation ID from 0 to  N-1 . Each CEO has some favorite CEO whom they like. They will attend the meeting only if they can be seated next to the person they like. You are asked to plan this seating arrangement.
+
+Write an algorithm to find the maximum number of CEOs who will attend the meeting.
+
+Input
+
+The first line of the input consists of an integer  num , representing the number of CEOs ( N ).
+
+The second line consists of  N  space-separated integers representing the ID of the person whom the  i -th CEO likes.
+
+Output
+
+Print an integer representing the maximum number of CEOs who will attend the meeting.
+
+Note
+
+One CEO can be liked by more than one CEO.
+
+Constraints
+
+1<= num <= 10^5
+
+0<= i < num
+
+Example
+
+Input:
+4
+2 3 4 1
+
+Output:
+
+4
+
+Explanation:
+
+1st CEO likes the person whose ID is 2.
+
+2nd CEO likes the person whose ID is 3.
+
+3rd CEO likes the person whose ID is 4.
+
+4th CEO likes the person whose ID is 1.
+
+A maximum of 4 CEOs can be seated around the circular table in the following manner:
+
+1-2-3-4.
+
+Case 1
+Input:
+4
+3 4 1 2
+
+Expected Output:
+4
+
+Case 2
+Input:
+7
+3 4 1 5 6 7 2
+
+Expected Output:
+5

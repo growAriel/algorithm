@@ -1,0 +1,62 @@
+Question
+
+The current selected programming language is Java 11. You are required to submit a fully working code, not just a partially correct but efficient code. Once submitted, you cannot review this problem again. You can use System.out.println() to debug your code. The System.out.println() may not work in case of syntax/runtime error. The version of Java 11 being used is 11.
+
+In a company, the computer systems of N employees are placed in a row. Due to some technical fault in the power supply, only some of the systems remain ON and the rest of them go OFF. Due to this flaw in the network, employees whose systems are OFF are unable to work. The company doesn't want employees to sit idle. To fix the technical issue, the technical head Adam makes some temporary arrangements for the team. Adam decides to connect all the OFF systems to the nearest ON system so that the length of the cable used to connect them is minimum. He calculates the distance of the systems from the first system.
+
+Write an algorithm to help Adam find the minimum length of the cable used to turn all the systems ON.
+
+Input
+
+The first line of the input consists of an integer num, representing the number of systems (N).
+The second line consists of N space-separated integers representing the initial state of each system, ON (1) or OFF (0).
+The last line consists of N space-separated integers representing the distance of the systems from the first system.
+
+Output
+
+Print an integer representing the minimum length of the cable used to turn all the systems ON.
+
+Constraints
+
+1 ≤ num ≤ 10⁵
+1 ≤ dist[i] < dist[i+1] ≤ 10⁹, where dist[i] and dist[i+1] are the distances of the systems from the first system
+1 ≤ i < num
+
+Note
+
+It is guaranteed that at least one system is ON and none of the systems are faulty.
+
+Example
+
+Input:
+
+3
+1 0 0
+1 5 6
+
+Output:
+
+5
+Explanation:
+
+Length of the cable required to connect the 2nd system to the 1st system = 4
+Length of the cable required to connect the 3rd system to the 2nd system = 1
+Total length of the cable = 5 (4 + 1)
+
+
+
+case 1:
+input:
+7
+1 0 1 1 0 1 1
+1 5 6 7 8 9 17
+output:
+2
+case2
+input:
+8
+0 1 0 0 1 1 0 0
+3 5 10 12 13 23 30 38
+
+output:
+20

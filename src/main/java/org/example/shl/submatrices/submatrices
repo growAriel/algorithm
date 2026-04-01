@@ -1,0 +1,64 @@
+Question
+
+The current selected programming language is Java 21. We emphasize the submission of a fully working code over partially correct but efficient code. Once submitted, you cannot review this problem again. You can use System.out.printIn() to debug your code. The System.out.printIn() may not work in case of syntax/runtime error. The version of Java 21 being used is 21.
+
+Given a matrix A[1..N][1..M] of integers, the product of a submatrix of A is the product of all the elements of the submatrix. Write an algorithm to find the number of non-empty submatrices that contain the top left element of matrix A (i.e. submatrices B[1..x][1..y] for 1 ≤ x ≤ N, 1 ≤ y ≤ M) with a product ≤ K.
+
+Input
+
+The first line of the input consists of two space-separated integers - rows and columns, representing the number of rows in the matrix (N) and the number of columns in the matrix (M), respectively.
+The next N lines consist of M space-separated integers representing the elements of the matrix A.
+The last line consists of an integer - maxK, representing the maximum permissible product of the elements of a submatrix (K).
+
+Output
+
+Print an integer representing the number of submatrices that contain the top left element of the given matrix with a product less than or equal to K.
+
+Constraints
+
+1 ≤ rows, columns ≤ 1000
+0 ≤ maxK ≤ 10^6
+0 ≤ X ≤ 1000; where X is the element of the matrix A
+
+Example
+
+Input:
+2 3
+1 2 3
+1 2 3
+3
+
+Output:
+3
+
+Explanation:
+Submatrices are [1], [1 2], [1 1]
+
+So the output is 3.
+
+case 1:
+Input:
+2 3 3
+1 2 3
+1 2 3
+
+Output:
+3
+
+Case 2
+Input:
+2 2 1
+2 0
+0 1
+
+Output:
+3
+
+给定一个整数矩阵 A[1..N][1..M]，一个子矩阵的乘积定义为该子矩阵中所有元素的乘积。请编写一个算法，找出所有包含矩阵左上角元素的非空子矩阵中，乘积 ≤ K 的子矩阵个数。
+也就是说，统计所有形如 B[1..x][1..y] 的子矩阵，其中 1 ≤ x ≤ N，1 ≤ y ≤ M。
+
+输入
+
+输入的第一行包含两个用空格分隔的整数 rows 和 columns，分别表示矩阵的行数 N 和列数 M。
+接下来的 N 行，每行包含 M 个用空格分隔的整数，表示矩阵 A 的元素。
+最后一行包含一个整数 maxK，表示子矩阵元素乘积允许的最大值 K。

@@ -1,0 +1,55 @@
+Question
+
+A University has invited N alumni for a dinner. The dinner table has a circular shape. Each alumnus is assigned an invitation ID from 0 to N-1. Each alumnus likes exactly one fellow alumnus and will attend the dinner only if he/she can be seated next to the person he/she likes.
+
+Write an algorithm to find the IDs of the alumni in a lexicographical order so that maximum number of alumni attend the dinner. If more than one such seating arrangement exists, then output the one that is lexicographically smaller.
+
+Input
+
+The first line of the input consists of an integer num, representing the number of alumni (N).
+
+The second line consists of N space-separated integers,
+alumniID[0], alumniID[1] …… alumniID[N-1] representing the ID of the person whom the iᵗʰ alumnus likes.
+
+Output
+
+Print space-separated integers representing the IDs of the alumni who will attend the dinner.
+
+Note
+
+One alumnus can be liked by multiple alumni.
+
+Constraints
+
+1 ≤ num ≤ 10⁵
+0 ≤ i < num
+
+Example
+
+Input:
+4
+2 3 4 1
+
+Output:
+1 2 3 4
+
+Explanation:
+
+The first alumnus likes the person whose ID is 2.
+The second alumnus likes the person whose ID is 3.
+The third alumnus likes the person whose ID is 4.
+The fourth alumnus likes the person whose ID is 1.
+
+A maximum of 4 alumni can be seated around the circular table in the following manner:
+1 2 3 4
+
+
+case2: gpt provides the case 2
+Input:
+6
+2 1 4 3 6 5
+
+Output:
+1 2
+
+
