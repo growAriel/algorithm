@@ -58,7 +58,6 @@ public class giftBasketCounter {
     }
 
     public static int countLuckyCustomers2(int[] prices, int k) {
-        int count = 0;
         Set<String> pairs = new HashSet<>();
         
         for (int i = 0; i < prices.length; i++) {

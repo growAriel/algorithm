@@ -15,7 +15,6 @@ public class resourceAllocation {
 
         // Read input
         int num = scanner.nextInt();
-        int constX = scanner.nextInt(); // This is always 3 per problem statement
 
         List<Application> applications = new ArrayList<>();
 
