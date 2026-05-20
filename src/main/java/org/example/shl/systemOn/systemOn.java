@@ -4,9 +4,8 @@ import java.util.*;
 
 public class systemOn {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        int systemCount = scanner.nextInt();
+        try (Scanner scanner = new Scanner(System.in)) {
+            int systemCount = scanner.nextInt();
 
         int[] systemState = new int[systemCount];
         for (int i = 0; i < systemCount; i++) {

@@ -17,8 +17,7 @@ public class leaftoLeafPathMaximumScore {
         }
 
         int numEdges = sc.nextInt();
-        int numNodes = sc.nextInt(); // 始终为 2
-
+        
         tree = new ArrayList[n + 1];
         for (int i = 1; i <= n; i++) {
             tree[i] = new ArrayList<>();

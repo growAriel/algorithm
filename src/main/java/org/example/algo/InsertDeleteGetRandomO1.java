@@ -40,10 +40,14 @@ class RandomizedSet {
             return false; // 如果值不存在，返回false
         }
         int index = indexMap.get(val); // 获取值的索引
-        int lastElement = nums.getLast(); // 获取列表中的最后一个元素
-        nums.set(index,lastElement);
+        // 使用 ArrayList 时没有 getLast()/removeLast() 方法，改为通过索引访问最后一个元素
+        int lastIndex = nums.size() - 1;
+        int lastElement = nums.get(lastIndex); // 获取列表中的最后一个元素
+        // 将最后一个元素放到被删除元素的位置（如果它不是同一个元素）
+        nums.set(index, lastElement);
         indexMap.put(lastElement, index); // 更新最后一个元素的索引
-        nums.removeLast(); // 移除列表中的最后一个元素
+        // 移除列表中的最后一个元素
+        nums.remove(lastIndex);
         indexMap.remove(val);
         return true;
     }

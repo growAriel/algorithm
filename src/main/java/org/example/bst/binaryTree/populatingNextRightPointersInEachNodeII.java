@@ -1,7 +1,4 @@
 package org.example.bst.binaryTree;
-import org.example.bst.binaryTree.Node;
-import java.util.ArrayList;
-import java.util.List;
 
 public class populatingNextRightPointersInEachNodeII {
     public static void main(String[] args) {

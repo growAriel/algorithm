@@ -21,7 +21,8 @@ public class pathSumII {
     }
 
     public static List<List<Integer>> paths  = new LinkedList<List<Integer>>();
-    public static List<Integer> path = new LinkedList<Integer>();
+    // Use LinkedList type so we can call removeLast() without casting
+    public static LinkedList<Integer> path = new LinkedList<>();
 
     public static List<List<Integer>> pathSum(TreeNode root, int targetSum) {
         path(root, targetSum);

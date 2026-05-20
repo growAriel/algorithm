@@ -40,7 +40,6 @@ public class university {
 
     private static List<Integer> findBestCycle(int n, int[] like) {
         int[] state = new int[n]; // 0=未访问 1=当前路径 2=已完成
-        int[] index = new int[n];
 
         int maxSize = 0;
         List<Integer> best = new ArrayList<>();
